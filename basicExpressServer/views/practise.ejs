@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> <%= locals.title %></title>
+    </head>
+    <body>
+        <%for(var a = 0; a < 5; a++){%>
+            <li><%=a%></li>
+        <%}%>
+        <% if(true){%>
+            <h3>Its true</h3>
+        <%}else{%>
+            <h3>Its false</h3>
+        <%}%>
+    </body>
+</html>
