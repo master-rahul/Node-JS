@@ -1,7 +1,7 @@
 // module export is an object, allows for external usage.
 module.exports.address = function(){
     const exe = require('child_process');
-    var address = '';
+    var address = '127.0.0.1';
     exe.exec("ifconfig en0 inet",function (error, stdout, stderr){
         if(error) console.log('Not able to execute command in terminal');
         else if(stderr) console.log(stderr);
